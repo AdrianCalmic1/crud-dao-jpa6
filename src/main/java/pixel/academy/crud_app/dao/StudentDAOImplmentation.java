@@ -11,6 +11,13 @@ import java.util.List;
 
 @Repository
 public class StudentDAOImplmentation implements StudentDAO {
+    @Override
+    @Transactional
+    public int deleteAll() {
+
+        int numRowsDeleted = entityManager.createQuery("DELETE FROM Student").executeUpdate();
+        return 0;
+    }
 
     private EntityManager entityManager;
     String offffVALEU;
@@ -55,7 +62,6 @@ public class StudentDAOImplmentation implements StudentDAO {
 
         // eliminarea studentului
         entityManager.remove(theStudent);
-
 
 
 
