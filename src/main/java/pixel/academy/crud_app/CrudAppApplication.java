@@ -27,7 +27,7 @@ public class CrudAppApplication {
 			//queryForStudents(studentDAO);
 
 			//updateStudent(studentDAO);
-			deleteStudent(studentDAO);
+			//deleteStudent(studentDAO);
 			deleteAllStudent(studentDAO);
 
 		};
